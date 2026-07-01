@@ -26,9 +26,9 @@ real_layers = [
     ("2 · Spec (the WHAT)",     "spec-kit: /specify → spec.md"),
     ("3 · Plan (the HOW)",      "spec-kit: /plan, reviewed by gstack: /plan-eng-review"),
     ("4 · Break into tasks",    "spec-kit: /tasks → tasks.md"),
-    ("5 · Build",               "spec-kit: /implement, sliced one PR at a time"),
+    ("5 · Build",               "spec-kit: /implement, test-first, one PR per slice"),
     ("6 · Review & secure",     "gstack: /review, then /cso for security"),
-    ("7 · Test & verify",       "gstack: /qa  +  a verification log"),
+    ("7 · Test & verify",       "gstack: /qa  +  superpowers: verification log"),
     ("8 · Ship & watch",        "gstack: /ship → /land-and-deploy → /canary"),
 ]
 

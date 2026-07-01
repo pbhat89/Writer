@@ -33,7 +33,7 @@ The fix isn't to stop using agents. It's to give the agent a *document* to build
 
 - **Spec Kit** (GitHub): the planning engine. It turns an idea into readable Markdown, `spec.md` then `plan.md` then `tasks.md`, so the agent codes against a document.
 - **GStack**: the review-and-ship engine. A command for every late stage: `/office-hours`, `/plan-eng-review`, `/review`, `/cso`, `/qa`, `/ship`, `/canary`.
-- **Superpowers** (obra): the discipline, real test-driven development and an append-only verification log. It's actually the most-starred of the three (roughly 243k stars to Spec Kit's 117k), but it bakes its method into agent behaviour and runs only on Claude. I still anchor on Spec Kit, because a newcomer learns the method faster when it lives in files you can read, and I borrow just one Superpowers habit later.
+- **Superpowers** (obra): the discipline. Real test-driven development and an append-only verification log. It's actually the most-starred of the three (roughly 243k stars to Spec Kit's 117k), but it bakes its method into agent behaviour and runs only on Claude. So I anchor on Spec Kit for the method itself, because a newcomer learns faster when the method lives in files you can read, and lean on Superpowers for how the building actually gets done: test first, and prove it afterwards.
 
 ![The blueprint: eight stages, with a feedback loop from review and testing back into the build](assets/blueprint.png)
 *Image by Author*
@@ -50,22 +50,30 @@ Pick the stages your work has actually earned. A throwaway script needs almost n
 
 **4. Break it into tasks.** `/tasks` splits the plan into `tasks.md`, a list of small, ordered, testable steps. Now both you and the agent always know what "done" means.
 
-**5. Build.** `/implement` works the task list. The one habit I borrow from Superpowers: build in small slices, one pull request each, never a 4,000-line blob nobody can review. The trade-off is real, small PRs are slower to ship and much faster to trust.
+**5. Build.** `/implement` works the task list, and this is where Superpowers earns its place. Two habits worth stealing: write the failing test first (no production code without a test that proves it), and build in small slices, one pull request each, never a 4,000-line blob nobody can review. The trade-off is real, test-first and small PRs are slower to ship and far easier to trust and to review.
 
 **6. Review and secure.** An agent reviewing its own code has the same blind spot as a student grading their own exam. GStack's `/review` is the gate every diff should pass. For anything security-sensitive, add `/cso` for an OWASP-style audit, and `/codex` when a genuinely different model's second opinion is worth the extra step. Security is a named stage here, not a vague good intention.
 
-**7. Test and verify.** `/qa` drives a real browser through every route, finds bugs, and fixes them. Then keep the proof: a short verification log stamped with the commit, the test, and the result. It feels like paperwork until the day someone asks "was this actually tested?" and you answer with a commit hash instead of a shrug.
+**7. Test and verify.** `/qa` drives a real browser through every route, finds bugs, and fixes them. Then keep the proof, an idea I took from Superpowers: an append-only verification log stamped with the commit, the test, and the result. You append, never edit, so a wrong-then-corrected entry becomes the audit trail. It feels like paperwork until the day someone asks "was this actually tested?" and you answer with a commit hash instead of a shrug.
 
 **8. Ship and watch.** `/ship` opens the PR, `/land-and-deploy` merges and deploys, `/canary` watches production for errors afterwards. The unglamorous tail that data science training skips entirely.
 
-## The blueprint is really a harness
+## Using it for everyday work: features and PRs
 
-Look back at those eight stages and notice what they share: almost every one exists because an agent, left alone, will confidently skip it. The spec stops it inventing scope. Review and security stop it shipping a plausible-looking bug. The verification log stops "it ran on my machine" being the only record. So this isn't really a process for *you*. It's a harness around the *agent*, the rails that turn raw speed into something you'd trust on a Monday morning. As the models get faster, the harness is what keeps that speed safe to use, and that, more than any single command, was the piece I'd been missing.
+You rarely start from a blank repo. Most real work is a new feature on an existing codebase, or reviewing someone else's change. The blueprint scales down for both.
+
+For a **new feature**, run the same eight stages in miniature: a short spec for just that feature, a quick plan, a handful of tasks, then build. Spec Kit is designed for this iterative loop, not only greenfield projects, so you get a fresh `spec.md` per feature while the old ones stay behind as a record of why things are the way they are.
+
+For **reviewing a PR**, the "one slice, one PR" habit from stage 5 is what makes review possible at all. A small, single-purpose diff is something a human, or `/review`, or a second model through `/codex`, can actually reason about. Point the same review gate at a teammate's PR, not just your own. A 4,000-line PR does not get reviewed, it gets rubber-stamped.
+
+## The real value: it forces you to think first
+
+Look back at those eight stages and notice what they share: almost every one exists to make you think and design in detail before a line of code is written. The spec makes you decide what you are building. The plan makes you decide how, on paper, where changing your mind is cheap. Review and security make you look hard before you ship. Left to itself, an agent skips all of it and starts typing. This workflow is the forcing function that makes you slow down and design first, and that discipline, far more than any single command, was the piece I had been missing. It isn't infrastructure or tooling. It's a way of thinking that the tools happen to make cheap.
 
 ## Learnings
 
 - The process is the point, not the tool. The real unlock was internalising the sequence and the reason for each step; the toolkits just make each step cheap.
-- Spec Kit plans, GStack ships. If you remember one split, remember that one.
+- Spec Kit plans, Superpowers keeps the build honest, GStack ships. If you remember one split, remember that.
 - Security and verification were my two biggest gaps, and they're exactly the two a modeller's training never covers. Making them named, non-skippable steps did more for me than any amount of better prompting.
 
 If you're a data or ML person who has always felt slightly fraudulent about the "software" half of the job, this is the scaffolding I wish I'd had. Steal it, drop the stages your work hasn't earned, and make it yours.
