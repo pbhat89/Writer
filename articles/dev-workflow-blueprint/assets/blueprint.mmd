@@ -1,0 +1,16 @@
+flowchart TD
+    A["1 · Ideate & scope<br/><b>Is this worth building?</b><br/><i>gstack: /office-hours, /plan-ceo-review</i>"]
+    B["2 · Spec — the WHAT<br/><b>Lock what you're building</b><br/><i>spec-kit: /specify, /clarify → spec.md</i>"]
+    C["3 · Plan — the HOW<br/><b>Design, then review the plan</b><br/><i>spec-kit: /plan · gstack: /plan-eng-review</i>"]
+    D["4 · Break into tasks<br/><b>Small, ordered, testable</b><br/><i>spec-kit: /tasks → tasks.md</i>"]
+    E["5 · Build<br/><b>One slice = one PR</b><br/><i>spec-kit: /implement · superpowers: sub-phase PRs</i>"]
+    F["6 · Review & secure<br/><b>Fresh eyes on the diff</b><br/><i>gstack: /review, /cso, /codex</i>"]
+    G["7 · Test & verify<br/><b>Prove it works, on the record</b><br/><i>gstack: /qa · superpowers: verification log</i>"]
+    H["8 · Ship & watch<br/><b>Merge, deploy, monitor</b><br/><i>gstack: /ship, /land-and-deploy, /canary</i>"]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+    F -. "bug or gap" .-> E
+    G -. "fails" .-> E
+
+    classDef stage fill:#f5f7fa,stroke:#4a5568,stroke-width:1px,color:#1a202c,rx:6,ry:6;
+    class A,B,C,D,E,F,G,H stage;

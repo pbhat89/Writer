@@ -4,11 +4,13 @@ description: >
   Draft technical content in Prateek Bhatnagar's (PB) writing voice. Use whenever
   Prateek wants to write, draft, outline, or edit a technical article, blog post, Medium
   post, tutorial, hands-on guide, or a LinkedIn post on data science, machine learning,
-  generative or agentic AI, MLOps, responsible AI, or general technology topics. Trigger on
-  requests like "write an article about", "draft a blog post on", "write a LinkedIn post",
-  "in my writing style", "PB_Writer", "make this sound like me", "turn these notes into an
-  article", or "outline a tutorial". This skill is for TECHNICAL sharing-and-learning content
-  only — do NOT use it for philosophical, introspective, or creative/fiction writing.
+  generative or agentic AI, MLOps, responsible AI, developer workflows and engineering
+  tooling/methodology (e.g. AI coding agents, spec-driven development, dev-lifecycle
+  blueprints), or general technology topics. Trigger on requests like "write an article
+  about", "draft a blog post on", "write a LinkedIn post", "in my writing style", "PB_Writer",
+  "make this sound like me", "turn these notes into an article", or "outline a tutorial".
+  This skill is for TECHNICAL sharing-and-learning content only — do NOT use it for
+  philosophical, introspective, or creative/fiction writing.
 ---
 
 # PB_Writer — Prateek Bhatnagar's Technical Writing Voice
@@ -62,9 +64,14 @@ I'm not advocating for any package"). He respects the reader's time and intellig
    usage; explicitly say there's no branding/promotion. Recommend when *not* to use a tool.
 5. **Always cover trade-offs.** Name the classic trade-off (capability vs. cost, complexity
    vs. interpretability, control vs. speed). Never present a tool as pure upside.
-6. **Real, runnable code.** No toy pseudo-snippets. Show the imports block, then numbered
-   build steps ("1. Loading the libraries", "2. Setting up the LLM API"). Comment liberally,
-   include docstrings, handle errors with sensible defaults. See `references/code-conventions.md`.
+6. **Real, runnable code (for hands-on builds).** No toy pseudo-snippets. Show the imports
+   block, then numbered build steps ("1. Loading the libraries", "2. Setting up the LLM API").
+   Comment liberally, include docstrings, handle errors with sensible defaults. See
+   `references/code-conventions.md`. **Not every article is a build.** Process/methodology and
+   framework-comparison pieces (e.g. a dev-workflow blueprint) legitimately have no code — this
+   rule is then satisfied *differently*: ground every claim in real commands, artifacts, tools,
+   and an author-made diagram instead of code. Concreteness is the rule; code is one way to get
+   it. See the "process / methodology" shape in `references/article-blueprint.md`.
 7. **Close with Learnings + References.** End long pieces with a "Learnings and future
    enhancement areas" (or "Remarks") section and a numbered/bracketed References list.
 8. **Ground in something concrete.** A real dataset (e.g. Breast Cancer, a Titanic-style

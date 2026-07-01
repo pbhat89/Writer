@@ -37,6 +37,14 @@ skip the code steps.
      "Testing some examples" → optional UI/front-end section.
    - *Primer / conceptual piece*: "What and why?" → "How does the current landscape look?" →
      "Food for thought" open questions → "What next?".
+   - *Process / methodology / framework-blueprint piece* (no code by design): "Is this even
+     worth doing?" → a one-minute primer on the tools/frameworks in play → the workflow walked
+     stage by stage, each stage a question-header with the plain "what", the tool/command you'd
+     reach for, and *why* (popularity + how it executes) → where the options overlap, argue which
+     to pick → "Food for thought" on ceremony-vs-speed and when to skip stages → "Learnings".
+     Concreteness here comes from **real commands, artifacts, and an author-made workflow
+     diagram** (not Python). This is the shape for dev-lifecycle, agentic-coding-workflow, and
+     tooling-methodology articles.
 
 6. **Trade-offs & caveats — woven throughout, not quarantined.** Every tool/approach gets its
    honest downside, security note, or "I would not recommend this for X."
