@@ -1,0 +1,18 @@
+{
+  "name": "pb-writer",
+  "version": "0.1.0",
+  "description": "Drafts technical articles and LinkedIn posts on data science, AI and technology in Prateek Bhatnagar's own voice — practitioner-led, hands-on, honest about trade-offs, and deliberately free of generic GenAI filler.",
+  "author": {
+    "name": "Prateek Bhatnagar"
+  },
+  "keywords": [
+    "writing",
+    "technical-writing",
+    "data-science",
+    "ai",
+    "linkedin",
+    "medium",
+    "voice"
+  ],
+  "license": "MIT"
+}

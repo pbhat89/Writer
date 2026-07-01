@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Build artifacts
+*.plugin
+/tmp/
+
+# Python (if a corpus-analysis or helper scripts get added later)
+__pycache__/
+*.pyc
+.venv/
+env/

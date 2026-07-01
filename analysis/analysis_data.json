@@ -1,0 +1,2490 @@
+{
+ "articles": {
+  "Synthetic Data (Part 1)": {
+   "words_prose": 994,
+   "sentences": 38,
+   "avg_sentence_len": 26.8,
+   "flesch_reading_ease": 33.0,
+   "fk_grade": 15.2,
+   "question_headers": 4,
+   "has_code": false
+  },
+  "Conversational Analytics (LangChain+Qwen)": {
+   "words_prose": 2736,
+   "sentences": 94,
+   "avg_sentence_len": 28.6,
+   "flesch_reading_ease": 32.2,
+   "fk_grade": 16.0,
+   "question_headers": 2,
+   "has_code": true
+  },
+  "Reproducible Workflows (R targets)": {
+   "words_prose": 2342,
+   "sentences": 103,
+   "avg_sentence_len": 23.7,
+   "flesch_reading_ease": 47.5,
+   "fk_grade": 11.9,
+   "question_headers": 3,
+   "has_code": false
+  },
+  "Explainable AI (7 Python packages)": {
+   "words_prose": 2434,
+   "sentences": 132,
+   "avg_sentence_len": 18.8,
+   "flesch_reading_ease": 42.8,
+   "fk_grade": 12.1,
+   "question_headers": 0,
+   "has_code": false
+  },
+  "Running LLMs Locally": {
+   "words_prose": 2655,
+   "sentences": 123,
+   "avg_sentence_len": 21.4,
+   "flesch_reading_ease": 44.7,
+   "fk_grade": 12.2,
+   "question_headers": 1,
+   "has_code": true
+  }
+ },
+ "personal_contrast": {
+  "words": 544,
+  "avg_sentence_len": 17.0,
+  "flesch_reading_ease": 74.9,
+  "fk_grade": 7.1
+ },
+ "signature": {
+  "\"basis\" (=based on)": 2,
+  "trade-off": 3,
+  "\"let's/lets\"": 7,
+  "\"dive\"": 2,
+  "personal opinion disclaimer": 4,
+  "\"getting started\"": 2,
+  "\"food for thought\"/open debate": 2,
+  "\"references\" section": 7,
+  "when NOT to use": 2,
+  "\"etc.\"": 16,
+  "question headers": 0
+ },
+ "top_words": [
+  [
+   "data",
+   135
+  ],
+  [
+   "model",
+   92
+  ],
+  [
+   "models",
+   74
+  ],
+  [
+   "image",
+   62
+  ],
+  [
+   "source",
+   50
+  ],
+  [
+   "author",
+   48
+  ],
+  [
+   "result",
+   47
+  ],
+  [
+   "code",
+   44
+  ],
+  [
+   "python",
+   42
+  ],
+  [
+   "type",
+   42
+  ],
+  [
+   "user",
+   41
+  ],
+  [
+   "https",
+   39
+  ],
+  [
+   "example",
+   39
+  ],
+  [
+   "agent",
+   38
+  ],
+  [
+   "below",
+   38
+  ],
+  [
+   "targets",
+   38
+  ],
+  [
+   "use",
+   34
+  ],
+  [
+   "prompt",
+   34
+  ],
+  [
+   "package",
+   33
+  ],
+  [
+   "llama",
+   29
+  ],
+  [
+   "com",
+   28
+  ],
+  [
+   "error",
+   28
+  ],
+  [
+   "llm",
+   26
+  ],
+  [
+   "local",
+   26
+  ],
+  [
+   "article",
+   24
+  ],
+  [
+   "now",
+   24
+  ],
+  [
+   "like",
+   23
+  ],
+  [
+   "various",
+   23
+  ],
+  [
+   "cpp",
+   23
+  ],
+  [
+   "packages",
+   22
+  ],
+  [
+   "output",
+   22
+  ],
+  [
+   "synthetic",
+   21
+  ],
+  [
+   "language",
+   21
+  ],
+  [
+   "create",
+   21
+  ],
+  [
+   "run",
+   21
+  ],
+  [
+   "using",
+   20
+  ],
+  [
+   "analysis",
+   20
+  ],
+  [
+   "workflow",
+   20
+  ],
+  [
+   "api",
+   19
+  ],
+  [
+   "graph",
+   19
+  ]
+ ],
+ "concepts": {
+  "Synthetic Data": {
+   "total": 21,
+   "articles": [
+    "Synthetic Data (Part 1)"
+   ]
+  },
+  "Privacy/PII": {
+   "total": 8,
+   "articles": [
+    "Synthetic Data (Part 1)",
+    "Running LLMs Locally"
+   ]
+  },
+  "Bias": {
+   "total": 5,
+   "articles": [
+    "Synthetic Data (Part 1)"
+   ]
+  },
+  "Governance": {
+   "total": 17,
+   "articles": [
+    "Synthetic Data (Part 1)",
+    "Reproducible Workflows (R targets)",
+    "Explainable AI (7 Python packages)",
+    "Running LLMs Locally"
+   ]
+  },
+  "LLMs": {
+   "total": 65,
+   "articles": [
+    "Synthetic Data (Part 1)",
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)",
+    "Running LLMs Locally"
+   ]
+  },
+  "Prompting": {
+   "total": 94,
+   "articles": [
+    "Synthetic Data (Part 1)",
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)",
+    "Running LLMs Locally"
+   ]
+  },
+  "Machine Learning": {
+   "total": 239,
+   "articles": [
+    "Synthetic Data (Part 1)",
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)",
+    "Explainable AI (7 Python packages)",
+    "Running LLMs Locally"
+   ]
+  },
+  "LangChain": {
+   "total": 35,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)"
+   ]
+  },
+  "Agents": {
+   "total": 69,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)",
+    "Running LLMs Locally"
+   ]
+  },
+  "Python REPL": {
+   "total": 8,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Explainable AI (7 Python packages)"
+   ]
+  },
+  "Streamlit": {
+   "total": 3,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)"
+   ]
+  },
+  "Pandas": {
+   "total": 45,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Running LLMs Locally"
+   ]
+  },
+  "OpenRouter": {
+   "total": 15,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)"
+   ]
+  },
+  "Qwen": {
+   "total": 24,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)",
+    "Running LLMs Locally"
+   ]
+  },
+  "Llama": {
+   "total": 91,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Running LLMs Locally"
+   ]
+  },
+  "Reproducibility": {
+   "total": 7,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)"
+   ]
+  },
+  "Pipelines/Workflows": {
+   "total": 47,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)",
+    "Running LLMs Locally"
+   ]
+  },
+  "Caching": {
+   "total": 3,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)"
+   ]
+  },
+  "Output Parsing": {
+   "total": 33,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)"
+   ]
+  },
+  "Error Handling": {
+   "total": 58,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)"
+   ]
+  },
+  "Visualization": {
+   "total": 29,
+   "articles": [
+    "Conversational Analytics (LangChain+Qwen)",
+    "Reproducible Workflows (R targets)",
+    "Explainable AI (7 Python packages)"
+   ]
+  },
+  "XGBoost": {
+   "total": 9,
+   "articles": [
+    "Reproducible Workflows (R targets)",
+    "Explainable AI (7 Python packages)"
+   ]
+  },
+  "targets (R)": {
+   "total": 39,
+   "articles": [
+    "Reproducible Workflows (R targets)"
+   ]
+  },
+  "MLOps/Production": {
+   "total": 14,
+   "articles": [
+    "Reproducible Workflows (R targets)",
+    "Explainable AI (7 Python packages)",
+    "Running LLMs Locally"
+   ]
+  },
+  "RAG": {
+   "total": 5,
+   "articles": [
+    "Reproducible Workflows (R targets)",
+    "Running LLMs Locally"
+   ]
+  },
+  "Explainability (XAI)": {
+   "total": 34,
+   "articles": [
+    "Explainable AI (7 Python packages)"
+   ]
+  },
+  "SHAP": {
+   "total": 17,
+   "articles": [
+    "Explainable AI (7 Python packages)"
+   ]
+  },
+  "LIME": {
+   "total": 20,
+   "articles": [
+    "Explainable AI (7 Python packages)"
+   ]
+  },
+  "DALEX": {
+   "total": 9,
+   "articles": [
+    "Explainable AI (7 Python packages)"
+   ]
+  },
+  "ELI5": {
+   "total": 6,
+   "articles": [
+    "Explainable AI (7 Python packages)"
+   ]
+  },
+  "Trade-offs": {
+   "total": 3,
+   "articles": [
+    "Explainable AI (7 Python packages)",
+    "Running LLMs Locally"
+   ]
+  },
+  "SLMs": {
+   "total": 18,
+   "articles": [
+    "Running LLMs Locally"
+   ]
+  },
+  "Quantization": {
+   "total": 9,
+   "articles": [
+    "Running LLMs Locally"
+   ]
+  },
+  "Ollama": {
+   "total": 21,
+   "articles": [
+    "Running LLMs Locally"
+   ]
+  },
+  "GPT4All": {
+   "total": 5,
+   "articles": [
+    "Running LLMs Locally"
+   ]
+  },
+  "llama.cpp": {
+   "total": 22,
+   "articles": [
+    "Running LLMs Locally"
+   ]
+  },
+  "Hugging Face": {
+   "total": 15,
+   "articles": [
+    "Running LLMs Locally"
+   ]
+  },
+  "GGUF": {
+   "total": 18,
+   "articles": [
+    "Running LLMs Locally"
+   ]
+  }
+ },
+ "edges": [
+  [
+   "Privacy/PII",
+   "Synthetic Data",
+   1
+  ],
+  [
+   "Bias",
+   "Synthetic Data",
+   1
+  ],
+  [
+   "Governance",
+   "Synthetic Data",
+   1
+  ],
+  [
+   "LLMs",
+   "Synthetic Data",
+   1
+  ],
+  [
+   "Prompting",
+   "Synthetic Data",
+   1
+  ],
+  [
+   "Machine Learning",
+   "Synthetic Data",
+   1
+  ],
+  [
+   "Bias",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "Governance",
+   "Privacy/PII",
+   2
+  ],
+  [
+   "LLMs",
+   "Privacy/PII",
+   2
+  ],
+  [
+   "Privacy/PII",
+   "Prompting",
+   2
+  ],
+  [
+   "Machine Learning",
+   "Privacy/PII",
+   2
+  ],
+  [
+   "Bias",
+   "Governance",
+   1
+  ],
+  [
+   "Bias",
+   "LLMs",
+   1
+  ],
+  [
+   "Bias",
+   "Prompting",
+   1
+  ],
+  [
+   "Bias",
+   "Machine Learning",
+   1
+  ],
+  [
+   "Governance",
+   "LLMs",
+   3
+  ],
+  [
+   "Governance",
+   "Prompting",
+   3
+  ],
+  [
+   "Governance",
+   "Machine Learning",
+   4
+  ],
+  [
+   "LLMs",
+   "Prompting",
+   4
+  ],
+  [
+   "LLMs",
+   "Machine Learning",
+   4
+  ],
+  [
+   "Machine Learning",
+   "Prompting",
+   4
+  ],
+  [
+   "LLMs",
+   "LangChain",
+   2
+  ],
+  [
+   "Agents",
+   "LLMs",
+   3
+  ],
+  [
+   "LLMs",
+   "Python REPL",
+   1
+  ],
+  [
+   "LLMs",
+   "Streamlit",
+   1
+  ],
+  [
+   "LLMs",
+   "Pandas",
+   2
+  ],
+  [
+   "LLMs",
+   "OpenRouter",
+   1
+  ],
+  [
+   "LLMs",
+   "Qwen",
+   3
+  ],
+  [
+   "LLMs",
+   "Llama",
+   2
+  ],
+  [
+   "LLMs",
+   "Reproducibility",
+   2
+  ],
+  [
+   "LLMs",
+   "Pipelines/Workflows",
+   3
+  ],
+  [
+   "Caching",
+   "LLMs",
+   2
+  ],
+  [
+   "LLMs",
+   "Output Parsing",
+   1
+  ],
+  [
+   "Error Handling",
+   "LLMs",
+   1
+  ],
+  [
+   "LLMs",
+   "Visualization",
+   2
+  ],
+  [
+   "LangChain",
+   "Prompting",
+   2
+  ],
+  [
+   "Agents",
+   "Prompting",
+   3
+  ],
+  [
+   "Prompting",
+   "Python REPL",
+   1
+  ],
+  [
+   "Prompting",
+   "Streamlit",
+   1
+  ],
+  [
+   "Pandas",
+   "Prompting",
+   2
+  ],
+  [
+   "OpenRouter",
+   "Prompting",
+   1
+  ],
+  [
+   "Prompting",
+   "Qwen",
+   3
+  ],
+  [
+   "Llama",
+   "Prompting",
+   2
+  ],
+  [
+   "Prompting",
+   "Reproducibility",
+   2
+  ],
+  [
+   "Pipelines/Workflows",
+   "Prompting",
+   3
+  ],
+  [
+   "Caching",
+   "Prompting",
+   2
+  ],
+  [
+   "Output Parsing",
+   "Prompting",
+   1
+  ],
+  [
+   "Error Handling",
+   "Prompting",
+   1
+  ],
+  [
+   "Prompting",
+   "Visualization",
+   2
+  ],
+  [
+   "LangChain",
+   "Machine Learning",
+   2
+  ],
+  [
+   "Agents",
+   "Machine Learning",
+   3
+  ],
+  [
+   "Machine Learning",
+   "Python REPL",
+   2
+  ],
+  [
+   "Machine Learning",
+   "Streamlit",
+   1
+  ],
+  [
+   "Machine Learning",
+   "Pandas",
+   2
+  ],
+  [
+   "Machine Learning",
+   "OpenRouter",
+   1
+  ],
+  [
+   "Machine Learning",
+   "Qwen",
+   3
+  ],
+  [
+   "Llama",
+   "Machine Learning",
+   2
+  ],
+  [
+   "Machine Learning",
+   "Reproducibility",
+   2
+  ],
+  [
+   "Machine Learning",
+   "Pipelines/Workflows",
+   3
+  ],
+  [
+   "Caching",
+   "Machine Learning",
+   2
+  ],
+  [
+   "Machine Learning",
+   "Output Parsing",
+   1
+  ],
+  [
+   "Error Handling",
+   "Machine Learning",
+   1
+  ],
+  [
+   "Machine Learning",
+   "Visualization",
+   3
+  ],
+  [
+   "Agents",
+   "LangChain",
+   2
+  ],
+  [
+   "LangChain",
+   "Python REPL",
+   1
+  ],
+  [
+   "LangChain",
+   "Streamlit",
+   1
+  ],
+  [
+   "LangChain",
+   "Pandas",
+   1
+  ],
+  [
+   "LangChain",
+   "OpenRouter",
+   1
+  ],
+  [
+   "LangChain",
+   "Qwen",
+   2
+  ],
+  [
+   "LangChain",
+   "Llama",
+   1
+  ],
+  [
+   "LangChain",
+   "Reproducibility",
+   2
+  ],
+  [
+   "LangChain",
+   "Pipelines/Workflows",
+   2
+  ],
+  [
+   "Caching",
+   "LangChain",
+   2
+  ],
+  [
+   "LangChain",
+   "Output Parsing",
+   1
+  ],
+  [
+   "Error Handling",
+   "LangChain",
+   1
+  ],
+  [
+   "LangChain",
+   "Visualization",
+   2
+  ],
+  [
+   "Agents",
+   "Python REPL",
+   1
+  ],
+  [
+   "Agents",
+   "Streamlit",
+   1
+  ],
+  [
+   "Agents",
+   "Pandas",
+   2
+  ],
+  [
+   "Agents",
+   "OpenRouter",
+   1
+  ],
+  [
+   "Agents",
+   "Qwen",
+   3
+  ],
+  [
+   "Agents",
+   "Llama",
+   2
+  ],
+  [
+   "Agents",
+   "Reproducibility",
+   2
+  ],
+  [
+   "Agents",
+   "Pipelines/Workflows",
+   3
+  ],
+  [
+   "Agents",
+   "Caching",
+   2
+  ],
+  [
+   "Agents",
+   "Output Parsing",
+   1
+  ],
+  [
+   "Agents",
+   "Error Handling",
+   1
+  ],
+  [
+   "Agents",
+   "Visualization",
+   2
+  ],
+  [
+   "Python REPL",
+   "Streamlit",
+   1
+  ],
+  [
+   "Pandas",
+   "Python REPL",
+   1
+  ],
+  [
+   "OpenRouter",
+   "Python REPL",
+   1
+  ],
+  [
+   "Python REPL",
+   "Qwen",
+   1
+  ],
+  [
+   "Llama",
+   "Python REPL",
+   1
+  ],
+  [
+   "Python REPL",
+   "Reproducibility",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "Python REPL",
+   1
+  ],
+  [
+   "Caching",
+   "Python REPL",
+   1
+  ],
+  [
+   "Output Parsing",
+   "Python REPL",
+   1
+  ],
+  [
+   "Error Handling",
+   "Python REPL",
+   1
+  ],
+  [
+   "Python REPL",
+   "Visualization",
+   2
+  ],
+  [
+   "Pandas",
+   "Streamlit",
+   1
+  ],
+  [
+   "OpenRouter",
+   "Streamlit",
+   1
+  ],
+  [
+   "Qwen",
+   "Streamlit",
+   1
+  ],
+  [
+   "Llama",
+   "Streamlit",
+   1
+  ],
+  [
+   "Reproducibility",
+   "Streamlit",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "Streamlit",
+   1
+  ],
+  [
+   "Caching",
+   "Streamlit",
+   1
+  ],
+  [
+   "Output Parsing",
+   "Streamlit",
+   1
+  ],
+  [
+   "Error Handling",
+   "Streamlit",
+   1
+  ],
+  [
+   "Streamlit",
+   "Visualization",
+   1
+  ],
+  [
+   "OpenRouter",
+   "Pandas",
+   1
+  ],
+  [
+   "Pandas",
+   "Qwen",
+   2
+  ],
+  [
+   "Llama",
+   "Pandas",
+   2
+  ],
+  [
+   "Pandas",
+   "Reproducibility",
+   1
+  ],
+  [
+   "Pandas",
+   "Pipelines/Workflows",
+   2
+  ],
+  [
+   "Caching",
+   "Pandas",
+   1
+  ],
+  [
+   "Output Parsing",
+   "Pandas",
+   1
+  ],
+  [
+   "Error Handling",
+   "Pandas",
+   1
+  ],
+  [
+   "Pandas",
+   "Visualization",
+   1
+  ],
+  [
+   "OpenRouter",
+   "Qwen",
+   1
+  ],
+  [
+   "Llama",
+   "OpenRouter",
+   1
+  ],
+  [
+   "OpenRouter",
+   "Reproducibility",
+   1
+  ],
+  [
+   "OpenRouter",
+   "Pipelines/Workflows",
+   1
+  ],
+  [
+   "Caching",
+   "OpenRouter",
+   1
+  ],
+  [
+   "OpenRouter",
+   "Output Parsing",
+   1
+  ],
+  [
+   "Error Handling",
+   "OpenRouter",
+   1
+  ],
+  [
+   "OpenRouter",
+   "Visualization",
+   1
+  ],
+  [
+   "Llama",
+   "Qwen",
+   2
+  ],
+  [
+   "Qwen",
+   "Reproducibility",
+   2
+  ],
+  [
+   "Pipelines/Workflows",
+   "Qwen",
+   3
+  ],
+  [
+   "Caching",
+   "Qwen",
+   2
+  ],
+  [
+   "Output Parsing",
+   "Qwen",
+   1
+  ],
+  [
+   "Error Handling",
+   "Qwen",
+   1
+  ],
+  [
+   "Qwen",
+   "Visualization",
+   2
+  ],
+  [
+   "Llama",
+   "Reproducibility",
+   1
+  ],
+  [
+   "Llama",
+   "Pipelines/Workflows",
+   2
+  ],
+  [
+   "Caching",
+   "Llama",
+   1
+  ],
+  [
+   "Llama",
+   "Output Parsing",
+   1
+  ],
+  [
+   "Error Handling",
+   "Llama",
+   1
+  ],
+  [
+   "Llama",
+   "Visualization",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "Reproducibility",
+   2
+  ],
+  [
+   "Caching",
+   "Reproducibility",
+   2
+  ],
+  [
+   "Output Parsing",
+   "Reproducibility",
+   1
+  ],
+  [
+   "Error Handling",
+   "Reproducibility",
+   1
+  ],
+  [
+   "Reproducibility",
+   "Visualization",
+   2
+  ],
+  [
+   "Caching",
+   "Pipelines/Workflows",
+   2
+  ],
+  [
+   "Output Parsing",
+   "Pipelines/Workflows",
+   1
+  ],
+  [
+   "Error Handling",
+   "Pipelines/Workflows",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "Visualization",
+   2
+  ],
+  [
+   "Caching",
+   "Output Parsing",
+   1
+  ],
+  [
+   "Caching",
+   "Error Handling",
+   1
+  ],
+  [
+   "Caching",
+   "Visualization",
+   2
+  ],
+  [
+   "Error Handling",
+   "Output Parsing",
+   1
+  ],
+  [
+   "Output Parsing",
+   "Visualization",
+   1
+  ],
+  [
+   "Error Handling",
+   "Visualization",
+   1
+  ],
+  [
+   "Governance",
+   "LangChain",
+   1
+  ],
+  [
+   "Agents",
+   "Governance",
+   2
+  ],
+  [
+   "Governance",
+   "Qwen",
+   2
+  ],
+  [
+   "Governance",
+   "Reproducibility",
+   1
+  ],
+  [
+   "Governance",
+   "Pipelines/Workflows",
+   2
+  ],
+  [
+   "Caching",
+   "Governance",
+   1
+  ],
+  [
+   "Governance",
+   "Visualization",
+   2
+  ],
+  [
+   "Governance",
+   "XGBoost",
+   2
+  ],
+  [
+   "Governance",
+   "targets (R)",
+   1
+  ],
+  [
+   "Governance",
+   "MLOps/Production",
+   3
+  ],
+  [
+   "Governance",
+   "RAG",
+   2
+  ],
+  [
+   "LLMs",
+   "XGBoost",
+   1
+  ],
+  [
+   "LLMs",
+   "targets (R)",
+   1
+  ],
+  [
+   "LLMs",
+   "MLOps/Production",
+   2
+  ],
+  [
+   "LLMs",
+   "RAG",
+   2
+  ],
+  [
+   "Prompting",
+   "XGBoost",
+   1
+  ],
+  [
+   "Prompting",
+   "targets (R)",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Prompting",
+   2
+  ],
+  [
+   "Prompting",
+   "RAG",
+   2
+  ],
+  [
+   "Machine Learning",
+   "XGBoost",
+   2
+  ],
+  [
+   "Machine Learning",
+   "targets (R)",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Machine Learning",
+   3
+  ],
+  [
+   "Machine Learning",
+   "RAG",
+   2
+  ],
+  [
+   "LangChain",
+   "XGBoost",
+   1
+  ],
+  [
+   "LangChain",
+   "targets (R)",
+   1
+  ],
+  [
+   "LangChain",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "LangChain",
+   "RAG",
+   1
+  ],
+  [
+   "Agents",
+   "XGBoost",
+   1
+  ],
+  [
+   "Agents",
+   "targets (R)",
+   1
+  ],
+  [
+   "Agents",
+   "MLOps/Production",
+   2
+  ],
+  [
+   "Agents",
+   "RAG",
+   2
+  ],
+  [
+   "Qwen",
+   "XGBoost",
+   1
+  ],
+  [
+   "Qwen",
+   "targets (R)",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Qwen",
+   2
+  ],
+  [
+   "Qwen",
+   "RAG",
+   2
+  ],
+  [
+   "Reproducibility",
+   "XGBoost",
+   1
+  ],
+  [
+   "Reproducibility",
+   "targets (R)",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Reproducibility",
+   1
+  ],
+  [
+   "RAG",
+   "Reproducibility",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "XGBoost",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "targets (R)",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Pipelines/Workflows",
+   2
+  ],
+  [
+   "Pipelines/Workflows",
+   "RAG",
+   2
+  ],
+  [
+   "Caching",
+   "XGBoost",
+   1
+  ],
+  [
+   "Caching",
+   "targets (R)",
+   1
+  ],
+  [
+   "Caching",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "Caching",
+   "RAG",
+   1
+  ],
+  [
+   "Visualization",
+   "XGBoost",
+   2
+  ],
+  [
+   "Visualization",
+   "targets (R)",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Visualization",
+   2
+  ],
+  [
+   "RAG",
+   "Visualization",
+   1
+  ],
+  [
+   "XGBoost",
+   "targets (R)",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "XGBoost",
+   2
+  ],
+  [
+   "RAG",
+   "XGBoost",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "targets (R)",
+   1
+  ],
+  [
+   "RAG",
+   "targets (R)",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "RAG",
+   2
+  ],
+  [
+   "Governance",
+   "Python REPL",
+   1
+  ],
+  [
+   "Explainability (XAI)",
+   "Governance",
+   1
+  ],
+  [
+   "Governance",
+   "SHAP",
+   1
+  ],
+  [
+   "Governance",
+   "LIME",
+   1
+  ],
+  [
+   "DALEX",
+   "Governance",
+   1
+  ],
+  [
+   "ELI5",
+   "Governance",
+   1
+  ],
+  [
+   "Governance",
+   "Trade-offs",
+   2
+  ],
+  [
+   "Explainability (XAI)",
+   "Machine Learning",
+   1
+  ],
+  [
+   "Machine Learning",
+   "SHAP",
+   1
+  ],
+  [
+   "LIME",
+   "Machine Learning",
+   1
+  ],
+  [
+   "DALEX",
+   "Machine Learning",
+   1
+  ],
+  [
+   "ELI5",
+   "Machine Learning",
+   1
+  ],
+  [
+   "Machine Learning",
+   "Trade-offs",
+   2
+  ],
+  [
+   "Python REPL",
+   "XGBoost",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Python REPL",
+   1
+  ],
+  [
+   "Explainability (XAI)",
+   "Python REPL",
+   1
+  ],
+  [
+   "Python REPL",
+   "SHAP",
+   1
+  ],
+  [
+   "LIME",
+   "Python REPL",
+   1
+  ],
+  [
+   "DALEX",
+   "Python REPL",
+   1
+  ],
+  [
+   "ELI5",
+   "Python REPL",
+   1
+  ],
+  [
+   "Python REPL",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Explainability (XAI)",
+   "Visualization",
+   1
+  ],
+  [
+   "SHAP",
+   "Visualization",
+   1
+  ],
+  [
+   "LIME",
+   "Visualization",
+   1
+  ],
+  [
+   "DALEX",
+   "Visualization",
+   1
+  ],
+  [
+   "ELI5",
+   "Visualization",
+   1
+  ],
+  [
+   "Trade-offs",
+   "Visualization",
+   1
+  ],
+  [
+   "Explainability (XAI)",
+   "XGBoost",
+   1
+  ],
+  [
+   "SHAP",
+   "XGBoost",
+   1
+  ],
+  [
+   "LIME",
+   "XGBoost",
+   1
+  ],
+  [
+   "DALEX",
+   "XGBoost",
+   1
+  ],
+  [
+   "ELI5",
+   "XGBoost",
+   1
+  ],
+  [
+   "Trade-offs",
+   "XGBoost",
+   1
+  ],
+  [
+   "Explainability (XAI)",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "SHAP",
+   1
+  ],
+  [
+   "LIME",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "DALEX",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "ELI5",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Trade-offs",
+   2
+  ],
+  [
+   "Explainability (XAI)",
+   "SHAP",
+   1
+  ],
+  [
+   "Explainability (XAI)",
+   "LIME",
+   1
+  ],
+  [
+   "DALEX",
+   "Explainability (XAI)",
+   1
+  ],
+  [
+   "ELI5",
+   "Explainability (XAI)",
+   1
+  ],
+  [
+   "Explainability (XAI)",
+   "Trade-offs",
+   1
+  ],
+  [
+   "LIME",
+   "SHAP",
+   1
+  ],
+  [
+   "DALEX",
+   "SHAP",
+   1
+  ],
+  [
+   "ELI5",
+   "SHAP",
+   1
+  ],
+  [
+   "SHAP",
+   "Trade-offs",
+   1
+  ],
+  [
+   "DALEX",
+   "LIME",
+   1
+  ],
+  [
+   "ELI5",
+   "LIME",
+   1
+  ],
+  [
+   "LIME",
+   "Trade-offs",
+   1
+  ],
+  [
+   "DALEX",
+   "ELI5",
+   1
+  ],
+  [
+   "DALEX",
+   "Trade-offs",
+   1
+  ],
+  [
+   "ELI5",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Agents",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "Pandas",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "Privacy/PII",
+   "Qwen",
+   1
+  ],
+  [
+   "Llama",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "Privacy/PII",
+   "RAG",
+   1
+  ],
+  [
+   "Privacy/PII",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Privacy/PII",
+   "SLMs",
+   1
+  ],
+  [
+   "Privacy/PII",
+   "Quantization",
+   1
+  ],
+  [
+   "Ollama",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "GPT4All",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "Privacy/PII",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "GGUF",
+   "Privacy/PII",
+   1
+  ],
+  [
+   "Governance",
+   "Pandas",
+   1
+  ],
+  [
+   "Governance",
+   "Llama",
+   1
+  ],
+  [
+   "Governance",
+   "SLMs",
+   1
+  ],
+  [
+   "Governance",
+   "Quantization",
+   1
+  ],
+  [
+   "Governance",
+   "Ollama",
+   1
+  ],
+  [
+   "GPT4All",
+   "Governance",
+   1
+  ],
+  [
+   "Governance",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Governance",
+   "Hugging Face",
+   1
+  ],
+  [
+   "GGUF",
+   "Governance",
+   1
+  ],
+  [
+   "LLMs",
+   "Trade-offs",
+   1
+  ],
+  [
+   "LLMs",
+   "SLMs",
+   1
+  ],
+  [
+   "LLMs",
+   "Quantization",
+   1
+  ],
+  [
+   "LLMs",
+   "Ollama",
+   1
+  ],
+  [
+   "GPT4All",
+   "LLMs",
+   1
+  ],
+  [
+   "LLMs",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "LLMs",
+   1
+  ],
+  [
+   "GGUF",
+   "LLMs",
+   1
+  ],
+  [
+   "Prompting",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Prompting",
+   "SLMs",
+   1
+  ],
+  [
+   "Prompting",
+   "Quantization",
+   1
+  ],
+  [
+   "Ollama",
+   "Prompting",
+   1
+  ],
+  [
+   "GPT4All",
+   "Prompting",
+   1
+  ],
+  [
+   "Prompting",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Prompting",
+   1
+  ],
+  [
+   "GGUF",
+   "Prompting",
+   1
+  ],
+  [
+   "Machine Learning",
+   "SLMs",
+   1
+  ],
+  [
+   "Machine Learning",
+   "Quantization",
+   1
+  ],
+  [
+   "Machine Learning",
+   "Ollama",
+   1
+  ],
+  [
+   "GPT4All",
+   "Machine Learning",
+   1
+  ],
+  [
+   "Machine Learning",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Machine Learning",
+   1
+  ],
+  [
+   "GGUF",
+   "Machine Learning",
+   1
+  ],
+  [
+   "Agents",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Agents",
+   "SLMs",
+   1
+  ],
+  [
+   "Agents",
+   "Quantization",
+   1
+  ],
+  [
+   "Agents",
+   "Ollama",
+   1
+  ],
+  [
+   "Agents",
+   "GPT4All",
+   1
+  ],
+  [
+   "Agents",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Agents",
+   "Hugging Face",
+   1
+  ],
+  [
+   "Agents",
+   "GGUF",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Pandas",
+   1
+  ],
+  [
+   "Pandas",
+   "RAG",
+   1
+  ],
+  [
+   "Pandas",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Pandas",
+   "SLMs",
+   1
+  ],
+  [
+   "Pandas",
+   "Quantization",
+   1
+  ],
+  [
+   "Ollama",
+   "Pandas",
+   1
+  ],
+  [
+   "GPT4All",
+   "Pandas",
+   1
+  ],
+  [
+   "Pandas",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Pandas",
+   1
+  ],
+  [
+   "GGUF",
+   "Pandas",
+   1
+  ],
+  [
+   "Qwen",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Qwen",
+   "SLMs",
+   1
+  ],
+  [
+   "Quantization",
+   "Qwen",
+   1
+  ],
+  [
+   "Ollama",
+   "Qwen",
+   1
+  ],
+  [
+   "GPT4All",
+   "Qwen",
+   1
+  ],
+  [
+   "Qwen",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Qwen",
+   1
+  ],
+  [
+   "GGUF",
+   "Qwen",
+   1
+  ],
+  [
+   "Llama",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "Llama",
+   "RAG",
+   1
+  ],
+  [
+   "Llama",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Llama",
+   "SLMs",
+   1
+  ],
+  [
+   "Llama",
+   "Quantization",
+   1
+  ],
+  [
+   "Llama",
+   "Ollama",
+   1
+  ],
+  [
+   "GPT4All",
+   "Llama",
+   1
+  ],
+  [
+   "Llama",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Llama",
+   1
+  ],
+  [
+   "GGUF",
+   "Llama",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "SLMs",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "Quantization",
+   1
+  ],
+  [
+   "Ollama",
+   "Pipelines/Workflows",
+   1
+  ],
+  [
+   "GPT4All",
+   "Pipelines/Workflows",
+   1
+  ],
+  [
+   "Pipelines/Workflows",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Pipelines/Workflows",
+   1
+  ],
+  [
+   "GGUF",
+   "Pipelines/Workflows",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "SLMs",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Quantization",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "Ollama",
+   1
+  ],
+  [
+   "GPT4All",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "MLOps/Production",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "GGUF",
+   "MLOps/Production",
+   1
+  ],
+  [
+   "RAG",
+   "Trade-offs",
+   1
+  ],
+  [
+   "RAG",
+   "SLMs",
+   1
+  ],
+  [
+   "Quantization",
+   "RAG",
+   1
+  ],
+  [
+   "Ollama",
+   "RAG",
+   1
+  ],
+  [
+   "GPT4All",
+   "RAG",
+   1
+  ],
+  [
+   "RAG",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "RAG",
+   1
+  ],
+  [
+   "GGUF",
+   "RAG",
+   1
+  ],
+  [
+   "SLMs",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Quantization",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Ollama",
+   "Trade-offs",
+   1
+  ],
+  [
+   "GPT4All",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Trade-offs",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Trade-offs",
+   1
+  ],
+  [
+   "GGUF",
+   "Trade-offs",
+   1
+  ],
+  [
+   "Quantization",
+   "SLMs",
+   1
+  ],
+  [
+   "Ollama",
+   "SLMs",
+   1
+  ],
+  [
+   "GPT4All",
+   "SLMs",
+   1
+  ],
+  [
+   "SLMs",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "SLMs",
+   1
+  ],
+  [
+   "GGUF",
+   "SLMs",
+   1
+  ],
+  [
+   "Ollama",
+   "Quantization",
+   1
+  ],
+  [
+   "GPT4All",
+   "Quantization",
+   1
+  ],
+  [
+   "Quantization",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Quantization",
+   1
+  ],
+  [
+   "GGUF",
+   "Quantization",
+   1
+  ],
+  [
+   "GPT4All",
+   "Ollama",
+   1
+  ],
+  [
+   "Ollama",
+   "llama.cpp",
+   1
+  ],
+  [
+   "Hugging Face",
+   "Ollama",
+   1
+  ],
+  [
+   "GGUF",
+   "Ollama",
+   1
+  ],
+  [
+   "GPT4All",
+   "llama.cpp",
+   1
+  ],
+  [
+   "GPT4All",
+   "Hugging Face",
+   1
+  ],
+  [
+   "GGUF",
+   "GPT4All",
+   1
+  ],
+  [
+   "Hugging Face",
+   "llama.cpp",
+   1
+  ],
+  [
+   "GGUF",
+   "llama.cpp",
+   1
+  ],
+  [
+   "GGUF",
+   "Hugging Face",
+   1
+  ]
+ ]
+}

@@ -1,0 +1,209 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PB_Writer — Style & Semantics Learned from the Corpus</title>
+<style>
+:root{--ink:#1d2533;--mut:#5b6b82;--line:#e6ebf2;--bg:#f6f8fb;--card:#fff;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,system-ui,-apple-system,sans-serif;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding:34px 22px 60px}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--mut);margin:0 0 26px;font-size:14px}
+h2{font-size:17px;margin:34px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 15px}
+.card .k{font-size:12px;color:var(--mut);margin-bottom:5px}
+.card .v{font-size:23px;font-weight:750}
+.card .d{font-size:11.5px;color:var(--mut);margin-top:3px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em}
+td.num{text-align:right;font-variant-numeric:tabular-nums;width:64px}
+.track{background:#eef2f7;border-radius:6px;height:9px;min-width:90px;overflow:hidden}
+.fill{height:100%;border-radius:6px}
+tr.pers td{color:#9a4b61}
+.tag{font-size:10px;background:#fbe7ee;color:#c0546f;padding:2px 7px;border-radius:20px;margin-left:6px;font-weight:600}
+.srow{display:grid;grid-template-columns:250px 1fr 34px;align-items:center;gap:12px;margin:7px 0;font-size:13px}
+.sval{text-align:right;color:var(--mut);font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:7px;align-items:baseline}
+.chip{background:#eef3fb;border:1px solid #dfe8f5;color:#2b3852;padding:4px 9px;border-radius:20px}
+.chip em{color:#8aa0bd;font-style:normal;margin-left:5px;font-size:10px}
+.graph{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px}
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin:10px 2px 0;font-size:12px;color:var(--mut)}
+.legend b{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.note{font-size:12.5px;color:var(--mut);margin-top:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.cards{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.srow{grid-template-columns:160px 1fr 30px}}
+</style></head><body><div class="wrap">
+<h1>PB_Writer — what the skill learned from your writing</h1>
+<p class="sub">A quantitative fingerprint of Prateek Bhatnagar's technical voice, computed from 5 published Medium articles (~13k words of prose). The personal essay "The Empty House" is shown only as a contrast — it sits outside the skill's technical scope.</p>
+
+<div class="cards">
+<div class="card"><div class="k">Technical articles analysed</div><div class="v">5</div><div class="d">+ 1 personal essay (contrast)</div></div>
+<div class="card"><div class="k">Avg sentence length</div><div class="v">23.9<span style="font-size:13px;font-weight:500"> words</span></div><div class="d">measured, prose only</div></div>
+<div class="card"><div class="k">Flesch reading ease</div><div class="v">40.0</div><div class="d">dense / specialist register</div></div>
+<div class="card"><div class="k">Reading grade (F–K)</div><div class="v">13.5</div><div class="d">graduate / professional</div></div>
+</div>
+
+<h2>Readability fingerprint</h2>
+<div class="panel">
+<table>
+<tr><th>Article</th><th class="num">Words</th><th class="num">Sent.</th><th>Sentence length</th><th class="num">Flesch</th><th class="num">Grade</th></tr>
+<tr><td>Synthetic Data (Part 1)</td><td class="num">994</td><td class="num">26.8</td><td><div class="track"><div class="fill" style="width:89%;background:#4f8cff"></div></div></td><td class="num">33.0</td><td class="num">15.2</td></tr><tr><td>Conversational Analytics (LangChain+Qwen)</td><td class="num">2,736</td><td class="num">28.6</td><td><div class="track"><div class="fill" style="width:95%;background:#4f8cff"></div></div></td><td class="num">32.2</td><td class="num">16.0</td></tr><tr><td>Reproducible Workflows (R targets)</td><td class="num">2,342</td><td class="num">23.7</td><td><div class="track"><div class="fill" style="width:79%;background:#4f8cff"></div></div></td><td class="num">47.5</td><td class="num">11.9</td></tr><tr><td>Explainable AI (7 Python packages)</td><td class="num">2,434</td><td class="num">18.8</td><td><div class="track"><div class="fill" style="width:63%;background:#4f8cff"></div></div></td><td class="num">42.8</td><td class="num">12.1</td></tr><tr><td>Running LLMs Locally</td><td class="num">2,655</td><td class="num">21.4</td><td><div class="track"><div class="fill" style="width:71%;background:#4f8cff"></div></div></td><td class="num">44.7</td><td class="num">12.2</td></tr><tr class="pers"><td>The Empty House <span class="tag">personal · out of scope</span></td><td class="num">544</td><td class="num">17.0</td><td><div class="track"><div class="fill" style="width:57%;background:#e26d8a"></div></div></td><td class="num">74.9</td><td class="num">7.1</td></tr>
+</table>
+<p class="note">Signal: your technical writing is consistently dense (Flesch ~32–48, grad-level) with long, information-rich sentences — and it's <b>markedly</b> different from your personal voice (Empty House: Flesch 74.9, grade 7.1, 17.0-word sentences). That gap is exactly why the skill is scoped to technical only: it should reproduce the left rows, never the pink one.</p>
+</div>
+
+<div class="two">
+<div><h2>Signature moves (frequency in corpus)</h2><div class="panel"><div class="srow"><span class="slab">&quot;etc.&quot;</span><div class="track"><div class="fill" style="width:100%;background:#22b8a6"></div></div><span class="sval">16</span></div><div class="srow"><span class="slab">&quot;let&#x27;s/lets&quot;</span><div class="track"><div class="fill" style="width:44%;background:#22b8a6"></div></div><span class="sval">7</span></div><div class="srow"><span class="slab">&quot;references&quot; section</span><div class="track"><div class="fill" style="width:44%;background:#22b8a6"></div></div><span class="sval">7</span></div><div class="srow"><span class="slab">personal opinion disclaimer</span><div class="track"><div class="fill" style="width:25%;background:#22b8a6"></div></div><span class="sval">4</span></div><div class="srow"><span class="slab">trade-off</span><div class="track"><div class="fill" style="width:19%;background:#22b8a6"></div></div><span class="sval">3</span></div><div class="srow"><span class="slab">&quot;basis&quot; (=based on)</span><div class="track"><div class="fill" style="width:12%;background:#22b8a6"></div></div><span class="sval">2</span></div><div class="srow"><span class="slab">&quot;dive&quot;</span><div class="track"><div class="fill" style="width:12%;background:#22b8a6"></div></div><span class="sval">2</span></div><div class="srow"><span class="slab">&quot;getting started&quot;</span><div class="track"><div class="fill" style="width:12%;background:#22b8a6"></div></div><span class="sval">2</span></div><div class="srow"><span class="slab">&quot;food for thought&quot;/open debate</span><div class="track"><div class="fill" style="width:12%;background:#22b8a6"></div></div><span class="sval">2</span></div><div class="srow"><span class="slab">when NOT to use</span><div class="track"><div class="fill" style="width:12%;background:#22b8a6"></div></div><span class="sval">2</span></div>
+<p class="note">These recurring tics — the opinion disclaimers, "etc.", trade-off framing, "let's/dive", "food for thought", explicit References — are encoded as reusable rules in the skill.</p></div></div>
+<div><h2>Vocabulary you actually use</h2><div class="panel"><div class="chips"><span class="chip" style="font-size:26px">data<em>135</em></span><span class="chip" style="font-size:21px">model<em>92</em></span><span class="chip" style="font-size:19px">models<em>74</em></span><span class="chip" style="font-size:16px">result<em>47</em></span><span class="chip" style="font-size:16px">code<em>44</em></span><span class="chip" style="font-size:16px">python<em>42</em></span><span class="chip" style="font-size:16px">type<em>42</em></span><span class="chip" style="font-size:16px">user<em>41</em></span><span class="chip" style="font-size:15px">example<em>39</em></span><span class="chip" style="font-size:15px">agent<em>38</em></span><span class="chip" style="font-size:15px">targets<em>38</em></span><span class="chip" style="font-size:15px">use<em>34</em></span><span class="chip" style="font-size:15px">prompt<em>34</em></span><span class="chip" style="font-size:15px">package<em>33</em></span><span class="chip" style="font-size:14px">llama<em>29</em></span><span class="chip" style="font-size:14px">error<em>28</em></span><span class="chip" style="font-size:14px">llm<em>26</em></span><span class="chip" style="font-size:14px">local<em>26</em></span><span class="chip" style="font-size:14px">article<em>24</em></span><span class="chip" style="font-size:14px">now<em>24</em></span><span class="chip" style="font-size:14px">like<em>23</em></span><span class="chip" style="font-size:14px">various<em>23</em></span></div>
+<p class="note">Top content words after stop-word removal — a data/model/code-centric lexicon, grounded in concrete artifacts (image, source, author, result).</p></div></div>
+</div>
+
+<h2>Concept knowledge graph</h2>
+<div class="graph"><svg viewBox="0 0 1040 720" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Segoe UI,system-ui,sans-serif">
+<rect x="0" y="0" width="1040" height="720" fill="none"/>
+<line x1="414" y1="554" x2="299" y2="223" stroke="#9aa7bd" stroke-width="2.6" opacity="0.34"/>
+<line x1="593" y1="101" x2="520" y2="54" stroke="#9aa7bd" stroke-width="2.6" opacity="0.34"/>
+<line x1="593" y1="101" x2="299" y2="223" stroke="#9aa7bd" stroke-width="2.6" opacity="0.34"/>
+<line x1="299" y1="223" x2="520" y2="54" stroke="#9aa7bd" stroke-width="2.6" opacity="0.34"/>
+<line x1="414" y1="554" x2="593" y2="101" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="414" y1="554" x2="520" y2="54" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="547" y1="92" x2="593" y2="101" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="593" y1="101" x2="497" y2="211" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="593" y1="101" x2="370" y2="282" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="547" y1="92" x2="520" y2="54" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="520" y1="54" x2="497" y2="211" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="370" y1="282" x2="520" y2="54" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="547" y1="92" x2="299" y2="223" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="299" y1="223" x2="497" y2="211" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="299" y1="223" x2="370" y2="282" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="299" y1="223" x2="324" y2="361" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="547" y1="92" x2="497" y2="211" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="547" y1="92" x2="370" y2="282" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="370" y1="282" x2="497" y2="211" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="414" y1="554" x2="284" y2="336" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="284" y1="336" x2="299" y2="223" stroke="#9aa7bd" stroke-width="2.1" opacity="0.28"/>
+<line x1="414" y1="554" x2="384" y2="603" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="593" y1="101" x2="384" y2="603" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="384" y1="603" x2="520" y2="54" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="299" y1="223" x2="384" y2="603" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="593" y1="101" x2="580" y2="186" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="593" y1="101" x2="569" y2="141" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="593" y1="101" x2="741" y2="227" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="593" y1="101" x2="238" y2="330" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="256" y1="287" x2="593" y2="101" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="593" y1="101" x2="324" y2="361" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="580" y1="186" x2="520" y2="54" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="569" y1="141" x2="520" y2="54" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="741" y1="227" x2="520" y2="54" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="520" y1="54" x2="238" y2="330" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="256" y1="287" x2="520" y2="54" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="520" y1="54" x2="324" y2="361" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="580" y1="186" x2="299" y2="223" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="299" y1="223" x2="441" y2="145" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="299" y1="223" x2="569" y2="141" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="741" y1="227" x2="299" y2="223" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="299" y1="223" x2="238" y2="330" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="256" y1="287" x2="299" y2="223" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="547" y1="92" x2="580" y2="186" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="580" y1="186" x2="497" y2="211" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="580" y1="186" x2="238" y2="330" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="580" y1="186" x2="370" y2="282" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="256" y1="287" x2="580" y2="186" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="580" y1="186" x2="324" y2="361" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="547" y1="92" x2="569" y2="141" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="547" y1="92" x2="741" y2="227" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="547" y1="92" x2="238" y2="330" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="547" y1="92" x2="256" y2="287" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="547" y1="92" x2="324" y2="361" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<line x1="441" y1="145" x2="324" y2="361" stroke="#9aa7bd" stroke-width="1.6" opacity="0.22"/>
+<text x="520" y="38" text-anchor="middle" font-size="14" font-weight="700" fill="#4f8cff">Generative &amp; Agentic AI</text>
+<text x="832" y="265" text-anchor="middle" font-size="14" font-weight="700" fill="#22b8a6">Local / Small LLMs</text>
+<text x="713" y="631" text-anchor="middle" font-size="14" font-weight="700" fill="#f2a03d">Explainable AI</text>
+<text x="327" y="631" text-anchor="middle" font-size="14" font-weight="700" fill="#e26d8a">Responsible Data &amp; Privacy</text>
+<text x="208" y="265" text-anchor="middle" font-size="14" font-weight="700" fill="#9b7ede">Engineering Craft</text>
+<circle cx="477" cy="67" r="7.0" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="477" y="85" text-anchor="middle" font-size="10" fill="#2b3446">Streamlit</text>
+<circle cx="256" cy="287" r="7.0" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="256" y="305" text-anchor="middle" font-size="10" fill="#2b3446">Caching</text>
+<circle cx="254" cy="240" r="7.0" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="254" y="258" text-anchor="middle" font-size="10" fill="#2b3446">Trade-offs</text>
+<circle cx="353" cy="554" r="8.7" fill="#e26d8a" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="353" y="573" text-anchor="middle" font-size="10" fill="#2b3446">Bias</text>
+<circle cx="475" cy="113" r="8.7" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="475" y="133" text-anchor="middle" font-size="10" fill="#2b3446">RAG</text>
+<circle cx="711" cy="265" r="8.7" fill="#22b8a6" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="711" y="285" text-anchor="middle" font-size="10" fill="#2b3446">GPT4All</text>
+<circle cx="625" cy="536" r="9.0" fill="#f2a03d" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="625" y="556" text-anchor="middle" font-size="10" fill="#2b3446">ELI5</text>
+<circle cx="238" cy="330" r="9.3" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="238" y="350" text-anchor="middle" font-size="10" fill="#2b3446">Reproducibility</text>
+<circle cx="384" cy="603" r="9.6" fill="#e26d8a" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="384" y="624" text-anchor="middle" font-size="10" fill="#2b3446">Privacy/PII</text>
+<circle cx="441" cy="145" r="9.6" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="441" y="166" text-anchor="middle" font-size="10" fill="#2b3446">Python REPL</text>
+<circle cx="656" cy="590" r="9.9" fill="#f2a03d" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="656" y="611" text-anchor="middle" font-size="10" fill="#2b3446">XGBoost</text>
+<circle cx="606" cy="583" r="9.9" fill="#f2a03d" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="606" y="604" text-anchor="middle" font-size="10" fill="#2b3446">DALEX</text>
+<circle cx="674" cy="294" r="9.9" fill="#22b8a6" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="674" y="315" text-anchor="middle" font-size="10" fill="#2b3446">Quantization</text>
+<circle cx="284" cy="336" r="10.9" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="284" y="358" text-anchor="middle" font-size="10" fill="#2b3446">MLOps/Production</text>
+<circle cx="483" cy="166" r="11.1" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="483" y="189" text-anchor="middle" font-size="10" fill="#2b3446">OpenRouter</text>
+<circle cx="711" cy="324" r="11.1" fill="#22b8a6" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="711" y="346" text-anchor="middle" font-size="10" fill="#2b3446">Hugging Face</text>
+<circle cx="414" cy="554" r="11.4" fill="#e26d8a" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="414" y="576" text-anchor="middle" font-size="10" fill="#2b3446">Governance</text>
+<circle cx="707" cy="583" r="11.4" fill="#f2a03d" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="707" y="605" text-anchor="middle" font-size="10" fill="#2b3446">SHAP</text>
+<circle cx="770" cy="324" r="11.5" fill="#22b8a6" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="770" y="346" text-anchor="middle" font-size="10" fill="#2b3446">SLMs</text>
+<circle cx="741" cy="361" r="11.5" fill="#22b8a6" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="741" y="384" text-anchor="middle" font-size="10" fill="#2b3446">GGUF</text>
+<circle cx="688" cy="536" r="11.8" fill="#f2a03d" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="688" y="558" text-anchor="middle" font-size="10" fill="#2b3446">LIME</text>
+<circle cx="384" cy="504" r="12.0" fill="#e26d8a" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="384" y="527" text-anchor="middle" font-size="10" fill="#2b3446">Synthetic Data</text>
+<circle cx="808" cy="294" r="12.0" fill="#22b8a6" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="808" y="317" text-anchor="middle" font-size="10" fill="#2b3446">Ollama</text>
+<circle cx="770" cy="265" r="12.1" fill="#22b8a6" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="770" y="288" text-anchor="middle" font-size="11.5" fill="#2b3446">llama.cpp</text>
+<circle cx="497" cy="211" r="12.4" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="497" y="234" text-anchor="middle" font-size="11.5" fill="#2b3446">Qwen</text>
+<circle cx="324" cy="361" r="13.0" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="324" y="385" text-anchor="middle" font-size="11.5" fill="#2b3446">Visualization</text>
+<circle cx="534" cy="182" r="13.4" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="534" y="206" text-anchor="middle" font-size="11.5" fill="#2b3446">Output Parsing</text>
+<circle cx="656" cy="495" r="13.5" fill="#f2a03d" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="656" y="520" text-anchor="middle" font-size="11.5" fill="#2b3446">Explainability (XAI)</text>
+<circle cx="580" cy="186" r="13.6" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="580" y="211" text-anchor="middle" font-size="11.5" fill="#2b3446">LangChain</text>
+<circle cx="338" cy="316" r="14.0" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="338" y="341" text-anchor="middle" font-size="11.5" fill="#2b3446">targets (R)</text>
+<circle cx="569" cy="141" r="14.6" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="569" y="167" text-anchor="middle" font-size="11.5" fill="#2b3446">Pandas</text>
+<circle cx="370" cy="282" r="14.8" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="370" y="308" text-anchor="middle" font-size="11.5" fill="#2b3446">Pipelines/Workflows</text>
+<circle cx="328" cy="260" r="15.7" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="328" y="287" text-anchor="middle" font-size="11.5" fill="#2b3446">Error Handling</text>
+<circle cx="593" cy="101" r="16.2" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="593" y="128" text-anchor="middle" font-size="11.5" fill="#2b3446">LLMs</text>
+<circle cx="547" cy="92" r="16.5" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="547" y="120" text-anchor="middle" font-size="11.5" fill="#2b3446">Agents</text>
+<circle cx="741" cy="227" r="18.0" fill="#22b8a6" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="741" y="256" text-anchor="middle" font-size="11.5" fill="#2b3446">Llama</text>
+<circle cx="520" cy="54" r="18.2" fill="#4f8cff" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="520" y="83" text-anchor="middle" font-size="11.5" fill="#2b3446">Prompting</text>
+<circle cx="299" cy="223" r="25.0" fill="#9b7ede" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+<text x="299" y="259" text-anchor="middle" font-size="11.5" fill="#2b3446">Machine Learning</text>
+</svg></div>
+<div class="legend">
+<span><b style="background:#4f8cff"></b>Generative &amp; Agentic AI</span><span><b style="background:#22b8a6"></b>Local / Small LLMs</span><span><b style="background:#f2a03d"></b>Explainable AI</span><span><b style="background:#e26d8a"></b>Responsible Data &amp; Privacy</span><span><b style="background:#9b7ede"></b>Engineering Craft</span>
+</div>
+<p class="note">Nodes are concepts mentioned across your articles (size = frequency); links connect concepts that co-occur within the same article (only co-occurrences spanning ≥2 articles shown). Five clear pillars emerge — this is the topical territory PB_Writer knows you write in.</p>
+
+</div></body></html>
