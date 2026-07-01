@@ -53,8 +53,9 @@ h2 { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 15pt;
 h1 + p em, body > p:first-of-type em { color: #55627a; }
 p { margin: 0 0 10pt; }
 em { color: #55627a; }
-img { max-width: 100%; height: auto; display: block;
-      margin: 14pt auto 4pt; border: 1px solid #eaedf2; border-radius: 4px; }
+img { max-width: 100%; max-height: 150mm; height: auto; width: auto;
+      display: block; margin: 14pt auto 4pt; border: 1px solid #eaedf2;
+      border-radius: 4px; page-break-inside: avoid; }
 img + em, p > em:only-child { display: block; text-align: center;
       font-size: 9.5pt; color: #77839b; margin-bottom: 12pt; }
 blockquote { margin: 12pt 0; padding: 6pt 0 6pt 14pt;

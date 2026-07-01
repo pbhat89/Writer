@@ -1,16 +1,17 @@
-flowchart TD
-    A["1 · Ideate & scope<br/><b>Is this worth building?</b><br/><i>gstack: /office-hours, /plan-ceo-review</i>"]
-    B["2 · Spec — the WHAT<br/><b>Lock what you're building</b><br/><i>spec-kit: /specify, /clarify → spec.md</i>"]
-    C["3 · Plan — the HOW<br/><b>Design, then review the plan</b><br/><i>spec-kit: /plan · gstack: /plan-eng-review</i>"]
-    D["4 · Break into tasks<br/><b>Small, ordered, testable</b><br/><i>spec-kit: /tasks → tasks.md</i>"]
-    E["5 · Build<br/><b>One slice = one PR</b><br/><i>spec-kit: /implement · superpowers: sub-phase PRs</i>"]
-    F["6 · Review & secure<br/><b>Fresh eyes on the diff</b><br/><i>gstack: /review, /cso, /codex</i>"]
-    G["7 · Test & verify<br/><b>Prove it works, on the record</b><br/><i>gstack: /qa · superpowers: verification log</i>"]
-    H["8 · Ship & watch<br/><b>Merge, deploy, monitor</b><br/><i>gstack: /ship, /land-and-deploy, /canary</i>"]
-
-    A --> B --> C --> D --> E --> F --> G --> H
-    F -. "bug or gap" .-> E
+flowchart LR
+    subgraph r1 [" "]
+    direction LR
+    A["1 · Ideate<br/>& scope"] --> B["2 · Spec<br/>(the WHAT)"] --> C["3 · Plan<br/>(the HOW)"] --> D["4 · Break<br/>into tasks"]
+    end
+    subgraph r2 [" "]
+    direction LR
+    E["5 · Build"] --> F["6 · Review<br/>& secure"] --> G["7 · Test<br/>& verify"] --> H["8 · Ship<br/>& watch"]
+    end
+    D --> E
+    F -. "bug / gap" .-> E
     G -. "fails" .-> E
+    style r1 fill:none,stroke:none
+    style r2 fill:none,stroke:none
 
-    classDef stage fill:#f5f7fa,stroke:#4a5568,stroke-width:1px,color:#1a202c,rx:6,ry:6;
+    classDef stage fill:#eef2f7,stroke:#3f566f,stroke-width:1px,color:#12202f;
     class A,B,C,D,E,F,G,H stage;

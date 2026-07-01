@@ -22,13 +22,13 @@ demo_layers = [
 ]
 
 real_layers = [
-    ("1 · Ideate & scope",      "gstack: /office-hours · /plan-ceo-review"),
-    ("2 · Spec — the WHAT",      "spec-kit: /specify → spec.md"),
-    ("3 · Plan — the HOW",       "spec-kit: /plan  +  gstack: /plan-eng-review"),
+    ("1 · Ideate & scope",      "gstack: /office-hours"),
+    ("2 · Spec (the WHAT)",     "spec-kit: /specify → spec.md"),
+    ("3 · Plan (the HOW)",      "spec-kit: /plan, reviewed by gstack: /plan-eng-review"),
     ("4 · Break into tasks",    "spec-kit: /tasks → tasks.md"),
-    ("5 · Build",               "spec-kit: /implement  +  superpowers: one-PR slices"),
-    ("6 · Review & secure",     "gstack: /review · /cso · /codex"),
-    ("7 · Test & verify",       "gstack: /qa  +  superpowers: verification log"),
+    ("5 · Build",               "spec-kit: /implement, sliced one PR at a time"),
+    ("6 · Review & secure",     "gstack: /review, then /cso for security"),
+    ("7 · Test & verify",       "gstack: /qa  +  a verification log"),
     ("8 · Ship & watch",        "gstack: /ship → /land-and-deploy → /canary"),
 ]
 
@@ -72,7 +72,7 @@ def draw_tower(x0, width, layers, colors, y_top, band_height):
     # bottom shadow line
     return
 
-# left (demo) tower — tall single blocks so it reads as "just two things"
+# left (demo) tower: tall single blocks so it reads as "just two things"
 demo_band_h = (len(real_layers) * (band_h + gap) - gap) / 2 - gap / 2
 draw_tower(1.0, 6.2, demo_layers, demo_colors, top_y, demo_band_h)
 
