@@ -52,11 +52,11 @@ Pick the stages your work has actually earned. A throwaway script needs almost n
 
 **5. Build.** `/implement` works the task list, and this is where Superpowers earns its place. Two habits worth stealing: write the failing test first (no production code without a test that proves it), and build in small slices, one pull request each, never a 4,000-line blob nobody can review. The trade-off is real, test-first and small PRs are slower to ship and far easier to trust and to review.
 
-**6. Review and secure.** An agent reviewing its own code has the same blind spot as a student grading their own exam. GStack's `/review` is the gate every diff should pass. For anything security-sensitive, add `/cso` for an OWASP-style audit, and `/codex` when a genuinely different model's second opinion is worth the extra step. Security is a named stage here, not a vague good intention.
+**6. Review and secure.** An agent reviewing its own code has the same blind spot as a student grading their own exam. GStack's `/review` is the gate every diff should pass, and `/codex` adds a genuinely different model's second opinion when the change is worth it. For security, `/cso` runs an OWASP-style audit, but if you're building GenAI products the threats shift under your feet: an agent that ingests external content (user uploads, scraped pages) can be prompt-injected into working for the attacker, a dependency the agent cheerfully suggests can be a typosquat or a supply-chain trap, and an agent with filesystem access is one bad step from leaking a secret. The OWASP Top 10 for LLM Applications is the checklist worth keeping open here. Security is a named stage, not a vague good intention.
 
-**7. Test and verify.** `/qa` drives a real browser through every route, finds bugs, and fixes them. Then keep the proof, an idea I took from Superpowers: an append-only verification log stamped with the commit, the test, and the result. You append, never edit, so a wrong-then-corrected entry becomes the audit trail. It feels like paperwork until the day someone asks "was this actually tested?" and you answer with a commit hash instead of a shrug.
+**7. Test and verify.** `/qa` drives a real browser through every route, finds bugs, and fixes them. Then keep the proof, an idea I took from Superpowers: an append-only verification log stamped with the commit, the test, and the result. You append, never edit, so a wrong-then-corrected entry becomes the audit trail. It feels like paperwork until the day someone asks "was this actually tested?" and you answer with a commit hash instead of a shrug. Human review scales badly, so automate the judgment where you can: a regression suite the agent has to keep green, an LLM-as-judge to grade outputs that have no single right answer, and a spec-to-code traceability pass (Spec Kit's `/analyze` is one) that checks every requirement in `spec.md` was actually built. For a GenAI system the eval suite *is* the test suite; skip it and you're shipping on vibes again.
 
-**8. Ship and watch.** `/ship` opens the PR, `/land-and-deploy` merges and deploys, `/canary` watches production for errors afterwards. The unglamorous tail that data science training skips entirely.
+**8. Ship and watch.** `/ship` opens the PR, `/land-and-deploy` merges and deploys, `/canary` watches production for errors afterwards. Then plan for it going wrong, because sometimes it will. Keep changes forward-only and reversible so a failed canary rolls back to the last green commit in one step, not a panicked 2am hotfix. And when review misses a regression, or a late spec change invalidates tasks you already built, treat it as a loop rather than a restart: fix the spec, let the dependent tasks fall out, rebuild only those. That is what the arrows looping back in the diagram are for. This unglamorous tail is the part data science training skips entirely.
 
 ## Using it for everyday work: features and PRs
 
@@ -65,6 +65,14 @@ You rarely start from a blank repo. Most real work is a new feature on an existi
 For a **new feature**, run the same eight stages in miniature: a short spec for just that feature, a quick plan, a handful of tasks, then build. Spec Kit is designed for this iterative loop, not only greenfield projects, so you get a fresh `spec.md` per feature while the old ones stay behind as a record of why things are the way they are.
 
 For **reviewing a PR**, the "one slice, one PR" habit from stage 5 is what makes review possible at all. A small, single-purpose diff is something a human, or `/review`, or a second model through `/codex`, can actually reason about. Point the same review gate at a teammate's PR, not just your own. A 4,000-line PR does not get reviewed, it gets rubber-stamped.
+
+## Where this meets the data science reality
+
+If you came up through data science, one objection should be nagging at you: you can't spec what you haven't explored yet. Half of our work is opening a notebook, poking the data, and finding out whether the idea is even possible. Writing a `spec.md` first would be pretending to know an answer you don't have.
+
+That's real, and it doesn't break the blueprint. It just adds a stage zero. Exploration is a different mode: a deliberately loose, vibe-coded spike whose only output is a decision about what is worth building. The discipline isn't "never explore freely", it's knowing which mode you're in and switching once the data has told you what works. The failure is staying in exploration mode long after you should have written the spec.
+
+The rest of the blueprint has quiet ML cousins you already half-use. The verification log is experiment tracking. Reproducible tasks are pipeline reproducibility. Model and data versioning is the same instinct as writing down what you built and why. Notebook-to-production is just "demo versus ship it for real" wearing an ML hat. Spec-driven building is what turns a promising notebook into something an underwriter, or a user, can actually rely on.
 
 ## The real value: it forces you to think first
 
@@ -87,3 +95,5 @@ If you're a data or ML person who has always felt slightly fraudulent about the 
 5. Spec Kit, GitHub's spec-driven development toolkit. https://github.com/github/spec-kit
 6. Superpowers, Jesse Vincent (obra). https://github.com/obra/superpowers
 7. GStack, the review-and-ship skill collection referenced here, from my own Claude Code setup.
+8. OWASP Top 10 for LLM Applications (2025). https://genai.owasp.org/llm-top-10/
+9. Zheng et al., "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena" (2023). https://arxiv.org/abs/2306.05685
