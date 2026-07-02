@@ -66,6 +66,14 @@ For a **new feature**, run the same eight stages in miniature: a short spec for 
 
 For **reviewing a PR**, the "one slice, one PR" habit from stage 5 is what makes review possible at all. A small, single-purpose diff is something a human, or `/review`, or a second model through `/codex`, can actually reason about. Point the same review gate at a teammate's PR, not just your own. A 4,000-line PR does not get reviewed, it gets rubber-stamped.
 
+## Map the codebase before you touch it
+
+The blueprint quietly assumes you understand the code you're changing. On an unfamiliar repo you often don't, and neither does the agent, which will grep a handful of files, guess at the architecture, and confidently edit the wrong thing. A spec says what you're adding; it says nothing about what is already there.
+
+That is where a tool like [graphify](https://github.com/safishamsi/graphify) fits, as a stage-zero move. It parses the repo with tree-sitter (no API key for code) into a queryable knowledge graph of entities and how they connect, so you and the agent can see the shape of a system without reading every file. It wires into the agent directly, so instead of grepping it queries the map. I ran it on a small repo and had a browsable graph in seconds at zero token cost.
+
+The honest caveat: it shines on real code, imports and call graphs and cross-module references, and on a docs-heavy repo it mostly maps structure. Like any generated artifact the graph goes stale, so you rebuild it after changes. Think of it as the read-side twin of the spec: the spec plans what you will write, the graph shows you what you are writing into.
+
 ## Where this meets the data science reality
 
 If you came up through data science, one objection should be nagging at you: you can't spec what you haven't explored yet. Half of our work is opening a notebook, poking the data, and finding out whether the idea is even possible. Writing a `spec.md` first would be pretending to know an answer you don't have.
@@ -97,3 +105,4 @@ If you're a data or ML person who has always felt slightly fraudulent about the 
 7. GStack, the review-and-ship skill collection referenced here, from my own Claude Code setup.
 8. OWASP Top 10 for LLM Applications (2025). https://genai.owasp.org/llm-top-10/
 9. Zheng et al., "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena" (2023). https://arxiv.org/abs/2306.05685
+10. graphify, a tool that turns a codebase into a queryable knowledge graph. https://github.com/safishamsi/graphify
